@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1A1B"
+    tools:context=".FolderActivity">
+
+    <ImageButton
+        android:id="@+id/downloadedFilesBtn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="52dp"
+        android:background="@android:color/transparent"
+        android:onClick="playlistDownloadedFiles"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/likedSongsBtn"
+        app:srcCompat="@drawable/downloaded_files" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 Songs"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Downloaded Files"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/downloadedFilesBtn"
+        app:layout_constraintTop_toTopOf="@+id/downloadedFilesBtn" />
+
+    <ImageView
+        android:id="@+id/topHead"
+        android:layout_width="412dp"
+        android:layout_height="49dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_top" />
+
+    <ImageButton
+        android:id="@+id/add"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:onClick="addToPlaylist"
+        app:layout_constraintEnd_toEndOf="@+id/topHead"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topHead"
+        app:srcCompat="@drawable/add" />
+
+
+    <ImageView
+        android:id="@+id/bottomBar"
+        android:layout_width="452dp"
+        android:layout_height="55dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_top" />
+
+    <ImageView
+        android:id="@+id/playBar"
+        android:layout_width="412dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/folderBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/play_bar" />
+
+    <ImageButton
+        android:id="@+id/homeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/transparent"
+        android:onClick="homePage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="@+id/bottomBar"
+        app:layout_constraintTop_toTopOf="@+id/bottomBar"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/searchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/transparent"
+        android:onClick="searchPage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/homeBtn"
+        app:layout_constraintTop_toTopOf="@+id/homeBtn"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/search" />
+
+    <ImageButton
+        android:id="@+id/folderBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toEndOf="@+id/searchBtn"
+        app:layout_constraintTop_toTopOf="@+id/searchBtn"
+        app:srcCompat="@drawable/folders" />
+
+    <ImageButton
+        android:id="@+id/profileBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@android:color/transparent"
+        android:onClick="profilePage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/folderBtn"
+        app:layout_constraintTop_toTopOf="@+id/folderBtn"
+        app:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Your Files"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/topHead"
+        app:layout_constraintTop_toTopOf="@+id/topHead" />
+
+    <ImageButton
+        android:id="@+id/likedSongsBtn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="52dp"
+        android:background="@android:color/transparent"
+        android:onClick="playlistLikedSongs"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topHead"
+        app:srcCompat="@drawable/liked_songs" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:text="Liked Songs"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/likedSongsBtn"
+        app:layout_constraintTop_toTopOf="@+id/likedSongsBtn" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 Songs"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ImageButton
+        android:id="@+id/yourPlaylistsBtn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="52dp"
+        android:background="@android:color/transparent"
+        android:onClick="yourPlaylistPage"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/downloadedFilesBtn"
+        app:srcCompat="@drawable/playlist" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 Playlists"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Your Playlists"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/yourPlaylistsBtn"
+        app:layout_constraintTop_toTopOf="@+id/yourPlaylistsBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

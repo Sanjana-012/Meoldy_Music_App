@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1A1B"
+    tools:context=".SearchActivity2">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="375dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:srcCompat="@drawable/search_bar" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="312dp"
+        android:text="Search"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.702"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bottomBar"
+        android:layout_width="452dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_top" />
+
+    <ImageView
+        android:id="@+id/playBar"
+        android:layout_width="412dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/folderBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/play_bar" />
+
+    <ImageButton
+        android:id="@+id/homeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/transparent"
+        android:onClick="homePage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="@+id/bottomBar"
+        app:layout_constraintTop_toTopOf="@+id/bottomBar"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/searchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/homeBtn"
+        app:layout_constraintTop_toTopOf="@+id/homeBtn"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/search" />
+
+    <ImageButton
+        android:id="@+id/folderBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@android:color/transparent"
+        android:onClick="folderPage"
+        app:layout_constraintStart_toEndOf="@+id/searchBtn"
+        app:layout_constraintTop_toTopOf="@+id/searchBtn"
+        app:srcCompat="@drawable/folders" />
+
+    <ImageButton
+        android:id="@+id/profileBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@android:color/transparent"
+        android:onClick="profilePage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/folderBtn"
+        app:layout_constraintTop_toTopOf="@+id/folderBtn"
+        app:srcCompat="@drawable/profile" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

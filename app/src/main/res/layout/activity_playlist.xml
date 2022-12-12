@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1A1B"
+    tools:context=".PlaylistActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/backBtn2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="back"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.041"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/back" />
+
+                <ImageView
+                    android:id="@+id/exoPlaylistLogo"
+                    android:layout_width="129dp"
+                    android:layout_height="134dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="64dp"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/exo_hits" />
+
+                <TextView
+                    android:id="@+id/txtPlaylist2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="44dp"
+                    android:text="EXO Hits"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.114"
+                    app:layout_constraintStart_toEndOf="@+id/exoPlaylistLogo"
+                    app:layout_constraintTop_toTopOf="@+id/exoPlaylistLogo" />
+
+                <ImageButton
+                    android:id="@+id/S1001"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="handleSelection"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/exoPlaylistLogo"
+                    app:srcCompat="@drawable/exo1"/>
+
+                <TextView
+                    android:id="@+id/txtTitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Obsession"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/S1001"
+                    app:layout_constraintTop_toTopOf="@+id/S1001" />
+
+                <TextView
+                    android:id="@+id/txtArtist1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EXO"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/txtTitle1"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTitle1" />
+
+                <ImageButton
+                    android:id="@+id/S1002"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="handleSelection"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/S1001"
+                    app:srcCompat="@drawable/exo1"/>
+
+                <TextView
+                    android:id="@+id/txtTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Trouble"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/S1002"
+                    app:layout_constraintTop_toTopOf="@+id/S1002" />
+
+                <TextView
+                    android:id="@+id/txtArtist2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EXO"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/txtTitle2"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTitle2" />
+
+                <ImageButton
+                    android:id="@+id/S1003"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="handleSelection"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/S1002"
+                    app:srcCompat="@drawable/exo2"/>
+
+                <TextView
+                    android:id="@+id/txtTitle3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Sign"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/S1003"
+                    app:layout_constraintTop_toTopOf="@+id/S1003" />
+
+                <TextView
+                    android:id="@+id/txtArtist3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EXO"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/txtTitle3"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTitle3" />
+
+                <ImageButton
+                    android:id="@+id/S1004"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="handleSelection"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/S1003"
+                    app:srcCompat="@drawable/exo3"/>
+
+                <TextView
+                    android:id="@+id/txtTitle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="The Eve"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/S1004"
+                    app:layout_constraintTop_toTopOf="@+id/S1004" />
+
+                <TextView
+                    android:id="@+id/txtArtist4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EXO"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/txtTitle4"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTitle4" />
+
+                <ImageButton
+                    android:id="@+id/S1005"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="handleSelection"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/S1004"
+                    app:srcCompat="@drawable/exo3"/>
+
+                <TextView
+                    android:id="@+id/txtTitle5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Forever"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/S1005"
+                    app:layout_constraintTop_toTopOf="@+id/S1005" />
+
+                <TextView
+                    android:id="@+id/txtArtist5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EXO"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/txtTitle5"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTitle5" />
+
+                <ImageButton
+                    android:id="@+id/S1006"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="handleSelection"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/S1005"
+                    app:srcCompat="@drawable/exo2"/>
+
+                <TextView
+                    android:id="@+id/txtTitle6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Tempo"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/S1006"
+                    app:layout_constraintTop_toTopOf="@+id/S1006" />
+
+                <TextView
+                    android:id="@+id/txtArtist6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EXO"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/txtTitle6"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTitle6" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1A1B"
+    tools:context=".MenuPlaylistActivity4">
+
+
+    <ImageButton
+        android:id="@+id/S1002"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/S1001"
+        app:srcCompat="@drawable/fake_love" />
+
+    <ImageButton
+        android:id="@+id/threeDotsBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toEndOf="@+id/txtTitle2"
+        app:layout_constraintTop_toTopOf="@+id/txtTitle2"
+        app:srcCompat="@drawable/three_dots_menu" />
+
+    <TextView
+        android:id="@+id/txtPlaylist3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Downloaded Files"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backBtn" />
+
+    <TextView
+        android:id="@+id/numSongs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="164dp"
+        android:text="2 Songs"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtPlaylist3"
+        app:layout_constraintTop_toBottomOf="@+id/txtPlaylist3" />
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="357dp"
+        android:background="@android:color/transparent"
+        android:onClick="back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <ImageButton
+        android:id="@+id/S1001"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numSongs"
+        app:srcCompat="@drawable/exo1" />
+
+    <TextView
+        android:id="@+id/txtTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Obsession"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/S1001"
+        app:layout_constraintTop_toTopOf="@+id/S1001" />
+
+    <TextView
+        android:id="@+id/txtArtist1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXO"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txtTitle1"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle1" />
+
+    <ImageButton
+        android:id="@+id/threeDotsBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toEndOf="@+id/txtTitle1"
+        app:layout_constraintTop_toTopOf="@+id/txtTitle1"
+        app:srcCompat="@drawable/three_dots_menu" />
+
+    <TextView
+        android:id="@+id/txtTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Fake Love"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/S1002"
+        app:layout_constraintTop_toTopOf="@+id/S1002" />
+
+
+    <TextView
+        android:id="@+id/txtArtist2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BTS"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txtTitle2"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="412dp"
+        android:layout_height="472dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/liked_and_download_menu" />
+
+    <ImageButton
+        android:id="@+id/visitArtistBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.601"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addToPlaylistBtn"
+        app:srcCompat="@drawable/visit_artist" />
+
+    <ImageButton
+        android:id="@+id/addToPlaylistBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:onClick="addToPlaylist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addToQueueBtn"
+        app:srcCompat="@drawable/add_to_playlist" />
+
+    <ImageButton
+        android:id="@+id/deleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.601"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/visitArtistBtn"
+        app:srcCompat="@drawable/delete" />
+
+    <ImageButton
+        android:id="@+id/addToQueueBtn"
+        android:layout_width="306dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="232dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:srcCompat="@drawable/add_to_queue" />
+
+    <ImageButton
+        android:id="@+id/downBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
+        android:onClick="down"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:srcCompat="@drawable/down_pointing_arrow" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
